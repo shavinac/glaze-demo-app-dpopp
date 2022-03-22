@@ -155,7 +155,7 @@
     typedjson "^1.7.0"
     uint8arrays "^2.0.5"
 
-"@ceramicnetwork/common@^1.1.0", "@ceramicnetwork/common@^1.3.0", "@ceramicnetwork/common@^1.7.0", "@ceramicnetwork/common@^1.7.1":
+"@ceramicnetwork/common@^1.1.0", "@ceramicnetwork/common@^1.7.0", "@ceramicnetwork/common@^1.7.1":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@ceramicnetwork/common/-/common-1.7.1.tgz#da0298ac721c4bf127b31c1a31dcd190907fa27c"
   integrity sha512-trOLEmVyHP+e0kyuSIaRuN07DJGoIzVS0k4ktG8w7R/7eWQp+FNe1g14wN+bjluBnPaOMGjm9X8guZQ7oqUJAw==
@@ -163,6 +163,24 @@
     "@ceramicnetwork/streamid" "^1.3.2"
     "@overnightjs/logger" "^1.2.0"
     cids "~1.1.6"
+    cross-fetch "^3.1.4"
+    flat "^5.0.2"
+    lodash.clonedeep "^4.5.0"
+    logfmt "^1.3.2"
+    rxjs "^7.0.0"
+    uint8arrays "^2.0.5"
+
+"@ceramicnetwork/common@^1.11.0", "@ceramicnetwork/common@^1.8.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@ceramicnetwork/common/-/common-1.11.0.tgz#f195ef61de73366a64d775496c9328660e9a30a2"
+  integrity sha512-UU7/POxSl+Wf5f/Wi/ISxhPqaHKqJ4crvVL9/I4FrnDPEqsUPasBwuo5alN6T2zz+AMDksc+bk1FXKLKKY9VRg==
+  dependencies:
+    "@ceramicnetwork/streamid" "^1.3.9"
+    "@overnightjs/logger" "1.2.1"
+    abort-controller "^3.0.0"
+    caip "~1.0.0"
+    cids "~1.1.6"
+    colors "1.3.3"
     cross-fetch "^3.1.4"
     flat "^5.0.2"
     lodash.clonedeep "^4.5.0"
@@ -295,7 +313,7 @@
     fast-json-patch "^2.2.1"
     lodash.clonedeep "^4.5.0"
 
-"@ceramicnetwork/stream-tile@^1.2.0", "@ceramicnetwork/stream-tile@^1.3.0", "@ceramicnetwork/stream-tile@^1.3.3", "@ceramicnetwork/stream-tile@^1.4.0":
+"@ceramicnetwork/stream-tile@^1.3.0", "@ceramicnetwork/stream-tile@^1.3.3", "@ceramicnetwork/stream-tile@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@ceramicnetwork/stream-tile/-/stream-tile-1.4.0.tgz#e235e83c262785743b43ea99195dc1e41a72cedf"
   integrity sha512-xqhukVcf9C9SNBOLGspwsWy1BUEjAlKayN6lNy0dThwGOnla7sYHBSBk0+YpJAmYHF4b9LrQgSVe/RaCRu0gkw==
@@ -306,10 +324,33 @@
     fast-json-patch "^2.2.1"
     uint8arrays "^2.0.5"
 
-"@ceramicnetwork/streamid@^1.1.2", "@ceramicnetwork/streamid@^1.3.1", "@ceramicnetwork/streamid@^1.3.2":
+"@ceramicnetwork/stream-tile@^1.4.1", "@ceramicnetwork/stream-tile@^1.5.0":
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@ceramicnetwork/stream-tile/-/stream-tile-1.5.7.tgz#66d481b33f756f27372d9fe3b12f78d72d6538c7"
+  integrity sha512-2419vN6lh9e4CsGzOzpJTYRWhRQPKhVZP/i34RYUTgdUmdOXgb62RipZG0IvTY5DtXNfnoRcTwOe+BZqvkCDFQ==
+  dependencies:
+    "@ceramicnetwork/common" "^1.11.0"
+    "@ceramicnetwork/streamid" "^1.3.9"
+    "@stablelib/random" "^1.0.0"
+    fast-json-patch "^2.2.1"
+    uint8arrays "^2.0.5"
+
+"@ceramicnetwork/streamid@^1.3.1", "@ceramicnetwork/streamid@^1.3.2":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@ceramicnetwork/streamid/-/streamid-1.3.2.tgz#c6fd5268cece89eb96791b289a0608ccf55dbf61"
   integrity sha512-4+W/ITI7qE/MYYExV5PppSD/mNaJuB765czW97xLj3l4y914jzX+5ZmiVagiSgwA+K8S+BtF5gIsTvNfg9h3cQ==
+  dependencies:
+    cids "~1.1.6"
+    ipld-dag-cbor "^0.17.0"
+    multibase "~4.0.2"
+    typescript-memoize "^1.0.0-alpha.4"
+    uint8arrays "^2.0.5"
+    varint "^6.0.0"
+
+"@ceramicnetwork/streamid@^1.3.3", "@ceramicnetwork/streamid@^1.3.4", "@ceramicnetwork/streamid@^1.3.9":
+  version "1.3.9"
+  resolved "https://registry.yarnpkg.com/@ceramicnetwork/streamid/-/streamid-1.3.9.tgz#5b83a8f0118e4bc0986d19dc565ab38d8c3ebdbd"
+  integrity sha512-XmW9QrSLv5pMbjV5GgbF6BFatdH7pZP53U2m8SINtdL9NDKj4B701ZyVVpx+NtE4djx34fOgK/ldbVOjyt8tPQ==
   dependencies:
     cids "~1.1.6"
     ipld-dag-cbor "^0.17.0"
@@ -755,20 +796,20 @@
   dependencies:
     "@glazed/tile-loader" "^0.1.0"
 
-"@glazed/devtools@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@glazed/devtools/-/devtools-0.1.3.tgz#09d9e11ded9b39a8f292058f5554905fbc971d31"
-  integrity sha512-pkrqFS1zJG40EFz3Zuv0hQO4WlPaRalUbEOunsYay08jZ3iBfCAUdxEvj/kJvGPS64jtVptf4ZIDAkbU1cMQBw==
+"@glazed/devtools@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@glazed/devtools/-/devtools-0.1.6.tgz#a7710dc113401e524942cd592bd9b9b7548aa4e9"
+  integrity sha512-9hiRmsviZbx/iDgkA6kn/rLj7FjZybNY1s5bXXM/vmepThe3gXF++qkKkDTpXyEUN0MlAH34PcHtcyDhHc+f/A==
   dependencies:
-    "@ceramicnetwork/common" "^1.3.0"
-    "@ceramicnetwork/stream-tile" "^1.2.0"
-    "@ceramicnetwork/streamid" "^1.1.2"
+    "@ceramicnetwork/common" "^1.8.0"
+    "@ceramicnetwork/stream-tile" "^1.5.0"
+    "@ceramicnetwork/streamid" "^1.3.4"
     "@glazed/constants" "^0.1.1"
     "@glazed/did-datastore-model" "^0.1.1"
-    ajv "^8.6.2"
+    ajv "^8.8.2"
     ajv-formats "^2.1.1"
     change-case "^4.1.2"
-    cids "^1.1.8"
+    cids "^1.1.9"
     fast-deep-equal "^3.1.3"
     uint8arrays "^3.0.0"
 
@@ -777,17 +818,17 @@
   resolved "https://registry.yarnpkg.com/@glazed/did-datastore-model/-/did-datastore-model-0.1.1.tgz#f5599b3f4d210d52a7d7858d19035e30ba0e8ed0"
   integrity sha512-I4DAyQyc0tF/hExQwaF2JMZ/GvYi4CUG2N0D+yFvwKnc2opz6zcuXi1hg3E9uttPi5MBR+ZzW62UmgZ7O+BJDw==
 
-"@glazed/did-datastore@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@glazed/did-datastore/-/did-datastore-0.2.0.tgz#856c948f4cfa6de9f23d28bf49a14ad7e06c6961"
-  integrity sha512-2kUQiWfiU5kZR5/FcXrOxuHX+ym7P9XlhTBFBy6KyTndcBwXeyxcZu8lS3G+/G1i+X/VJY/HvMO/rQkEaj6BFA==
+"@glazed/did-datastore@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@glazed/did-datastore/-/did-datastore-0.2.3.tgz#1ff22a2da7097c44139c21b593543bc50c1c9309"
+  integrity sha512-Go8S1nOF7c8tExri4UAdrMCBTj9yaJFMaWourlfBqTeuZUmy31f+NASGaoAlKx1oFFOSuKpbjMSOv6xctgBE4w==
   dependencies:
-    "@ceramicnetwork/streamid" "^1.3.1"
+    "@ceramicnetwork/streamid" "^1.3.3"
     "@glazed/constants" "^0.1.1"
     "@glazed/datamodel" "^0.2.0"
-    "@glazed/tile-loader" "^0.1.0"
+    "@glazed/tile-loader" "^0.1.3"
 
-"@glazed/tile-loader@^0.1.0", "@glazed/tile-loader@^0.1.1":
+"@glazed/tile-loader@^0.1.0":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@glazed/tile-loader/-/tile-loader-0.1.2.tgz#eca8eaec47ffbb9ec19ebdcb44f096fe952c015d"
   integrity sha512-w8ejDdyCmEJ1WKzfZnOvD/z8g2DZ7+pIKi21edHikiH/HKYzHFqv+xjBMMbBX1heh4RV0aGxOwicFLcaLmdKOg==
@@ -795,6 +836,23 @@
     "@ceramicnetwork/stream-tile" "^1.3.0"
     dataloader "^2.0.0"
     setimmediate "^1.0.5"
+
+"@glazed/tile-loader@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@glazed/tile-loader/-/tile-loader-0.1.3.tgz#d37845711e27a8a755284654ae603d3bc93e613e"
+  integrity sha512-WqxjOBr+OTQpNqPZ+tYXuvwWWpalXNxrob1e1R02L62ERft6GywA0caqXUUpZIGrDj0bf/KGv0vzA1XvYi50kA==
+  dependencies:
+    "@ceramicnetwork/stream-tile" "^1.4.1"
+    dataloader "^2.0.0"
+    setimmediate "^1.0.5"
+
+"@glazed/types@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@glazed/types/-/types-0.1.3.tgz#3cf7aa8f45efa987fe2a52b61cb9b4346cfc3600"
+  integrity sha512-u1QNCJ/vxVkni1eDZWstIZxzPLRn9x2LrTjGg0EmFwyZXhaz9fHRjt9hy6xrKyT7jjqlbsViP+Krm1V9aL6Zng==
+  dependencies:
+    ajv "^8.6.2"
+    dids "^2.3.0"
 
 "@hapi/accept@^5.0.1":
   version "5.0.2"
@@ -1221,7 +1279,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@overnightjs/logger@^1.2.0":
+"@overnightjs/logger@1.2.1", "@overnightjs/logger@^1.2.0":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@overnightjs/logger/-/logger-1.2.1.tgz#dde726683f39abf726fde57cff578fca96bc183a"
   integrity sha512-ssLUjjj/DXl6m4oydyA6vgVHyJcis4Ui0hS7+EyOxZVMXbiVZeGOficfJfgELTNqTbHLmTb3TBVyJspNDkqbLw==
@@ -2202,10 +2260,20 @@ ajv@^6.12.3, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.0.0, ajv@^8.1.0, ajv@^8.6.2:
+ajv@^8.0.0, ajv@^8.1.0:
   version "8.6.3"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.6.3.tgz#11a66527761dc3e9a3845ea775d2d3c0414e8764"
   integrity sha512-SMJOdDP6LqTkD0Uq8qLi+gMwSt0imXLSV080qFVwJCpH9U6Mb+SUGHAXM0KNbcBPguytWyvFxcHgMLe2D2XSpw==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js "^4.2.2"
+
+ajv@^8.6.2, ajv@^8.8.2:
+  version "8.10.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.10.0.tgz#e573f719bd3af069017e3b66538ab968d040e54d"
+  integrity sha512-bzqAEZOjkrUMl2afH8dknrq5KEk2SrwdBROR+vH1EKVQTqaUbJVPdc/gEdggTMM0Se+s+Ja4ju4TlNcStKl2Hw==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -2791,7 +2859,7 @@ bytes@3.1.0, bytes@^3.1.0:
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
   integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
 
-caip@^1.0.0, caip@^1.0.0-beta.0:
+caip@^1.0.0, caip@^1.0.0-beta.0, caip@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/caip/-/caip-1.0.0.tgz#29834b862433c35d9243df45ebeb2c6ef63f7dd8"
   integrity sha512-+U9P7+9jeVBWoP7BDWHVD/JGp9azT4KmFCpDRKTy0U01bCV0x7bxwf6WTl0/dUnnTE+ZA9M4EavptQdHg7k1vA==
@@ -2968,7 +3036,7 @@ chrome-trace-event@^1.0.2:
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz#1015eced4741e15d06664a957dbbf50d041e26ac"
   integrity sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==
 
-cids@^1.0.0, cids@^1.1.5, cids@^1.1.6, cids@^1.1.8, cids@~1.1.6:
+cids@^1.0.0, cids@^1.1.5, cids@^1.1.6, cids@^1.1.9, cids@~1.1.6:
   version "1.1.9"
   resolved "https://registry.yarnpkg.com/cids/-/cids-1.1.9.tgz#402c26db5c07059377bcd6fb82f2a24e7f2f4a4f"
   integrity sha512-l11hWRfugIcbGuTZwAM5PwpjPPjyb6UZOGwlHSnOBV5o07XhQ4gNpBN67FbODvpjyHtd+0Xs6KNvUcGBiDRsdg==
@@ -3056,6 +3124,11 @@ colorette@^2.0.10, colorette@^2.0.14:
   version "2.0.16"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.16.tgz#713b9af84fdb000139f04546bd4a93f62a5085da"
   integrity sha512-hUewv7oMjCp+wkBv5Rm0v87eJhq4woh5rSR+42YSQJKecCqgIqNkZ6lAlQms/BwHPJA5NKMRlpxPRv0n8HQW6g==
+
+colors@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.3.3.tgz#39e005d546afe01e01f9c4ca8fa50f686a01205d"
+  integrity sha512-mmGt/1pZqYRjMxB1axhTo16/snVZ5krrKkcmMeVKxzECMMXoCgnvTPp10QgHfcbQZw8Dq2jMNG6je4JlWU0gWg==
 
 colors@^1.3.3:
   version "1.4.0"
@@ -3640,6 +3713,20 @@ did-resolver@^3.1.0, did-resolver@^3.1.1, did-resolver@^3.1.3:
   resolved "https://registry.yarnpkg.com/did-resolver/-/did-resolver-3.1.3.tgz#ed530c9daa2c9925f85e9eabf258e51960db7e70"
   integrity sha512-ab8y90tSiDkTdfddXRC9Qcb1QSd568aC6+OgFTrcE4rs1vQAZOil+VqXHDu+Ff/UvhxlckPO8oJtp86iICZG0w==
 
+dids@^2.3.0:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/dids/-/dids-2.4.3.tgz#91b2243280bf90dd6bd24dad061d58bf4ec38453"
+  integrity sha512-V4EX8XTtnyuZq0iqzV9kY7Zn7JlmaezLnxrK9g1bb7wT6FNZdsufVnEcIqCaSu4w64Nmaf1zHWbNeNfpxDvERg==
+  dependencies:
+    "@stablelib/random" "^1.0.1"
+    cids "^1.1.6"
+    dag-jose-utils "^0.1.1"
+    did-jwt "^5.6.1"
+    did-resolver "^3.1.0"
+    query-string "^7.0.0"
+    rpc-utils "^0.3.4"
+    uint8arrays "^2.1.5"
+
 dids@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/dids/-/dids-2.4.0.tgz#7791369f75e4097595236c6b188a827f90fe6619"
@@ -3769,6 +3856,11 @@ dot-case@^3.0.4:
   dependencies:
     no-case "^3.0.4"
     tslib "^2.0.3"
+
+dotenv@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.0.tgz#c619001253be89ebb638d027b609c75c26e47411"
+  integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"

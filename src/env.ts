@@ -8,29 +8,51 @@ import { getResolver } from 'key-did-resolver'
 
 import modelAliases from './model.json'
 
-export type Note = {
-  date: string
-  text: string
+// export type Note = {
+//   date: string
+//   text: string
+// }
+
+// export type NoteItem = {
+//   id: string
+//   title: string
+// }
+
+// export type NotesList = { notes: Array<NoteItem> }
+
+// export type ModelTypes = {
+//   schemas: {
+//     Note: Note
+//     Notes: NotesList
+//   }
+//   definitions: {
+//     notes: 'Notes'
+//   }
+//   tiles: {
+//     placeholderNote: 'Note'
+//   }
+// }
+
+export type StampItem = {
+  providerId: string
+  isVerified: boolean
+  dateVerified: string
 }
 
-export type NoteItem = {
-  id: string
-  title: string
+export type Passport = {
+  dateCreated: string
+  dateUpdated: string
+  stamps: StampItem[]
 }
-
-export type NotesList = { notes: Array<NoteItem> }
 
 export type ModelTypes = {
   schemas: {
-    Note: Note
-    Notes: NotesList
+    Passport: Passport
   }
   definitions: {
-    notes: 'Notes'
+    passport: 'Passport'
   }
-  tiles: {
-    placeholderNote: 'Note'
-  }
+  tiles: {}
 }
 
 export type Context = {
